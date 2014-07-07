@@ -27,7 +27,7 @@ module.exports = function(grunt) {
         },
         server_port: 9000,
         server_base: 'dev'
-    }
+    };
 
     grunt.initConfig({
         // Task configuration
@@ -41,7 +41,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= projectConfig.dev.sass %>',
-                    src: ['*.scss'],
+                    src: ['**.scss'],
                     dest: '<%= projectConfig.dev.css %>',
                     ext: '.css'
                 }]
@@ -54,7 +54,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= projectConfig.build.sass %>',
-                    src: ['*.scss'],
+                    src: ['**.scss'],
                     dest: '<%= projectConfig.build.css %>',
                     ext: '.css'
                 }]
@@ -68,7 +68,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= projectConfig.dev.css %>',
-                    src: ['*.css'],
+                    src: ['**.css'],
                     dest: '<%= projectConfig.dev.css %>',
                     ext: '.css'
                 }]
@@ -80,7 +80,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= projectConfig.build.css %>',
-                    src: ['*.css'],
+                    src: ['**.css'],
                     dest: '<%= projectConfig.build.css %>',
                     ext: '.css'
                 }]
@@ -91,7 +91,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= projectConfig.dev.css %>',
-                    src: ['*.css'],
+                    src: ['**.css'],
                     dest: '<%= projectConfig.dev.css %>',
                     ext: '.css'
                 }]
@@ -100,7 +100,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= projectConfig.build.css %>',
-                    src: ['*.css'],
+                    src: ['**.css'],
                     dest: '<%= projectConfig.build.css %>',
                     ext: '.css'
                 }]
@@ -114,7 +114,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= projectConfig.build.images %>',
-                    src: '*.{png,jpg,gif}',
+                    src: '**.{png,jpg,gif}',
                     dest: '<%= projectConfig.build.images %>'
                 }]
             }
@@ -139,7 +139,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= projectConfig.build.images %>',
-                    src: ['*.{jpg,png,gif}']
+                    src: ['**.{jpg,png,gif}']
                 }]
             }
         },
@@ -166,13 +166,10 @@ module.exports = function(grunt) {
             },
             images: {
                 options: { livereload: true },
-                files: ['<%= projectConfig.dev.images %>/*']
+                files: ['<%= projectConfig.dev.images %>/**']
             },
             components: {
                 files: ['<%= projectConfig.dev.components %>/**']
-            },
-            resources: {
-                files: ['<%= projectConfig.dev.resources %>/**']
             }
         }
     });
