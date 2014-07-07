@@ -1,0 +1,12 @@
+# General Project Files/Folders
+.*/
+node_modules
+**/components
+**/css
+
+# Dev Files/Folders
+dev/*.html
+!dev/*.pre.html
+
+# Build Files/Folders
+build

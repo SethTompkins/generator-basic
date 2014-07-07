@@ -1,36 +1,41 @@
 {
   "name": "generator-basic",
-  "version": "0.0.0",
-  "description": "Yeoman generator",
-  "license": "MIT",
-  "main": "app/index.js",
-  "repository": "SethTompkins/generator-basic",
+  "version": "0.1.0",
+  "description": "A basic generator for Yeoman",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "homepage": "https://github.com/SethTompkins/generator-basic",
+  "bugs": "https://github.com/SethTompkins/generator-basic/issues",
   "author": {
-    "name": "Seth Tompkins",
-    "email": "seth@sethtompkins.com",
+    "name": "",
+    "email": "",
     "url": "https://github.com/SethTompkins"
   },
-  "engines": {
-    "node": ">=0.10.0"
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/SethTompkins/generator-basic.git"
   },
   "scripts": {
     "test": "mocha"
   },
-  "files": [
-    "app"
-  ],
-  "keywords": [
-    "yeoman-generator"
-  ],
   "dependencies": {
-    "yeoman-generator": "^0.16.0",
-    "chalk": "^0.5.0",
-    "yosay": "^0.3.0"
+    "yeoman-generator": "~0.14.0"
   },
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "~1.14.0"
   },
   "peerDependencies": {
     "yo": ">=1.0.0"
-  }
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.2.10"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
 }

@@ -1,6 +1,9 @@
 {
-  "name": "package",
-  "version": "0.0.0",
-  "dependencies": {}
+  "name": "<%= _.slugify(name) %>",
+  "version": "1.0.0",
+  "dependencies": {
+    "html5shiv": "latest",
+  	"jquery": "<%= jQueryVer %>"
+  }
 }
 
